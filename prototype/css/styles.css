@@ -1,0 +1,237 @@
+/*mobile default*/
+.wrapper{
+  width: auto;
+  margin: 1rem;
+  background-color:white;
+  display: block;
+}
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color:#DD454D;
+  }
+h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+p{
+  font-family: 'Noto Serif', serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 1rem;
+}
+/*navigation bar*/
+nav {
+  background-color: #232941;
+  padding: 0.8rem;
+}
+nav #favicon{
+  width: 30%;
+  margin-top: 0.5rem;
+  height: auto;
+  float: left;
+  overflow: hidden;
+}
+nav li{
+  display: block;
+  clear: right;
+  list-style-type: none;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-decoration: none;
+  font-family: 'Josefin sans', sans-serif;
+  font-family: 500;
+  text-align: right;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+nav a:hover{
+  text-decoration: underline 2px #F9D120;
+}
+/*index page banner and buttons*/
+#banner{
+  background-color: black;
+  padding-bottom: 0.3rem;
+}
+.banner {
+  position: relative;
+  text-align: left;
+  background-color: black;
+  padding-bottom: 3rem;
+}
+.banner p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 60%;
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.click a{
+  text-decoration: none;
+}
+.click button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: 1.5rem;
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  background-color: #DD454D;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  text-align:center;
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+}
+.click button:hover{
+  background-color:#232941;
+}
+.para1{
+  line-height: 2rem;
+}
+/*index page bottom image*/
+#good{
+  width: 100%;
+  height: auto;
+}
+/*about page images*/
+#newspaper{
+width: 100%;
+height: auto;
+}
+#yelling{
+  width: 100%;
+  height: auto;
+}
+/*footer and social media icons*/
+footer{
+  background-color: #232941;
+}
+.icon img{
+  width: 15%;
+  height: auto;
+}
+/*tablet view*/
+@media (min-width: 760px){
+ /*font size adjustment*/
+  h1{
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  .banner p{
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
+  nav #favicon{
+    width: 25%;
+  }
+  /*grid layout for index page buttons*/
+  .click {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-self: start;
+  }
+  .icon img{
+    width: 10%;
+  }
+  /*about page*/
+  #newspaper{
+    width: 90%;
+    margin-left: 2rem;
+  }
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: start;
+  }
+}
+
+/*desktop view*/
+@media (min-width: 1024px) {
+  nav #favicon{
+    width: 15%;
+    margin-left: 2rem;
+  }
+  nav li{
+    padding: 2.7rem;
+    display: inline-flex;
+    text-align: right;
+    clear: right;
+    margin-left: 2rem;
+  }
+  h1{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    clear: right;
+    text-align: center;
+  }
+  .banner p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2.7rem;
+  }
+  .click button{
+    margin-left: 3rem;
+  }
+  .para1{
+    line-height: 2.2rem;
+    margin: 2rem;
+   }
+  #good{
+    width: 20%;
+    margin-left: 2rem;
+  }
+  /*about page*/
+  .about{
+    margin: 2rem;
+  }
+  .about h2{
+    text-align: left;
+    margin-left: 1rem;
+  }
+  #newspaper{
+    float: right;
+    width: 30%;
+  }
+  .mission{
+  clear: left;
+  }
+  #yelling{
+    float: left;
+    width: 35%;
+    padding: 2rem 4rem 3rem 1rem;
+  }
+  .sheep{
+    clear: right;
+    
+  }
+  /*footer*/
+  footer{
+    clear: both;
+  }
+  .icon img{
+    width: 5%;
+    margin-left: 22%;
+  }
+}
